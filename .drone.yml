@@ -4,10 +4,9 @@ build:
   pull: true
   commands:
     - cmd /c ver
-    - cmd /c c:/msys64/mingw64/bin/gcc.exe
     - cmd /c "c:/msys64/mingw64/bin/gcc.exe"
+    - cmd /c c:/msys64/mingw64/bin/gcc.exe
 
 matrix:
   arch:
-    - 32
     - 64
