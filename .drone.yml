@@ -5,6 +5,7 @@ build:
   commands:
     - cmd /c ver
     - cmd /c systeminfo
+    - cmd /c c:/msys64/mingw64/bin/gcc.exe
 
 matrix:
   arch:
