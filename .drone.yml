@@ -1,0 +1,14 @@
+build:
+  image: teaci/msys$$arch
+  shell: mingw$$arch
+  pull: true
+  commands:
+    - if [ $$arch = 32 ]; then target=i686; fi
+    - if [ $$arch = 64 ]; then target=x86_64; fi
+    - cmd /c ver
+    - cmd /c systeminfo
+
+matrix:
+  arch:
+    - 32
+    - 64
