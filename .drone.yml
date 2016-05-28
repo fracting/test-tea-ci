@@ -5,8 +5,10 @@ build:
   environement:
     - foo=bar
   commands:
+    - foo2=bar2
     - echo a && echo b
     - echo $foo
+    - echo $foo2
 
 matrix:
   arch:
