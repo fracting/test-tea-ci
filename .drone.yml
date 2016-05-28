@@ -8,6 +8,7 @@ build:
     - foo2=bar2
     - echo a && echo b
     - echo $foo
+    - echo "$foo"
     - echo $foo2
 
 matrix:
