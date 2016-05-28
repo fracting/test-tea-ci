@@ -2,7 +2,7 @@ build:
   image: teaci/msys$$arch
   shell: mingw$$arch
   pull: true
-  environement:
+  environment:
     - foo=bar
   commands:
     - foo2=bar2
