@@ -2,11 +2,11 @@ build:
   image: teaci/msys$$arch
   shell: mingw$$arch
   pull: true
+  environement:
+    - foo=bar
   commands:
-    - cmd /c ver
-    - ./test_cmd.sh
-    - cmd /c "c:/msys64/mingw64/bin/gcc.exe" || true
-    - cmd /c c:/msys64/mingw64/bin/gcc.exe
+    - echo a && echo b
+    - echo $foo
 
 matrix:
   arch:
